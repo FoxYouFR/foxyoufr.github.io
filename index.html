@@ -270,15 +270,15 @@
     <h1 class="name">Florian Kolly</h1>
     <p class="role">NeuroAI student @EPFL</p>
 
-    <p class="tagline">
-      Hi, I'm a Master's student in Neuro-X at EPFL, focusing on brain-like artificial models.<br>
-      I aim to work on three different aspects:
+    <div class="tagline">
+      <p>Hi, I'm a Master's student in Neuro-X at EPFL, focusing on brain-like artificial models.<br>
+      I aim to work on three different aspects:</p>
       <ul>
         <li>Building models of brain disorders and diseases, to allow for quick neuroscientific exploration</li>
         <li>Linking artificial models with the brain and vice-versa to improve our understanding of both systems</li>
         <li>Using neuroscience to improve interpretability and safety of artificial models</li>
       </ul>
-    </p>
+    </div>
 
     <div class="contact-icons">
       <a href="mailto:florian.kolly@epfl.ch" title="Email" aria-label="Email">
@@ -287,7 +287,7 @@
      <!--  <a href="https://scholar.google.com" title="Google Scholar" aria-label="Google Scholar">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2zM6 12.6V17c0 2 3 4 6 4s6-2 6-4v-4.4l-6 3.3-6-3.3z"/></svg>
       </a> -->
-      <a href="https://x.com" title="BlueSky" aria-label="BlueSky">
+      <a href="https://bsky.app/profile/flux.eurosky.social" title="BlueSky" aria-label="BlueSky">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bluesky" viewBox="0 0 16 16"><path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/></svg>
       </a>
       <a href="https://www.linkedin.com/in/florian-kolly/" title="LinkedIn" aria-label="LinkedIn">
@@ -295,13 +295,22 @@
       </a>
     </div>
 
-    <nav class="primary">
+    <!--<nav class="primary">
       <a href="#papers">Papers</a>
       <a href="#projects">Projects</a>
-    </nav>
+    </nav>-->
   </aside>
 
   <main>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="bio">
+          <p><strong>Master in Neuro-X with Minor in Data Science</strong> — École Polytechnique Fédérale de Lausanne (EPFL)</p>
+          <p><strong>Bachelor in Communication Systems</strong> — École Polytechnique Fédérale de Lausanne (EPFL)</p>
+          <p><strong>Vocational Training in Information Technology</strong> — Ecole des Métiers de Fribourg (EMF)</p>
+        </div>
+    </section>
 
     <section id="papers">
       <h2 class="section-title">Papers</h2>
@@ -329,19 +338,35 @@
     </section>
 
     <section id="projects">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title">Projects Showcase</h2>
+
+      <!--<article class="entry entry-no-media">
+        <div>
+          <span class="entry-meta">2026 · Industry Research | Prof. Mariya Toneva</span>
+          <h3>NeuroAI Project @ BrAIN (MPI-SWS)</h3>
+          <p class="abstract"></p>Undefined yet.</p>
+        </div>
+      </article>-->
       
       <article class="entry entry-no-media">
         <div>
-          <span class="entry-meta">2025 · Master Semester Project</span>
+          <span class="entry-meta">2026 · Master Semester Project | Prof. Adrien Doerig</span>
           <h3>NeuroAI Project @ Cognitive Computational Neuroscience lab (FUB)</h3>
           <p class="abstract"><u>Implied auditory information from natural scenes presented visually</u>: ongoing research.</p>
+        </div>
+      </article>
+
+      <article class="entry entry-no-media">
+        <div>
+          <span class="entry-meta">2026 · Course Project | Dr. Eduard Durech</span>
+          <h3>RL Project @ Swiss-AI Initiative</h3>
+          <p class="abstract">Automatic generation of multi-hop reasoning datasets for training Apertus 1.5 on large context. Used this dataset to train Qwen 2.5 using various RL techniques and prompting strategies. Project done as part of the RL course.</p>
         </div>
       </article>
       
       <article class="entry entry-no-media">
         <div>
-          <span class="entry-meta">2025 · IC Research Project</span>
+          <span class="entry-meta">2025 · IC Research Project | Prof. Carmela Troncoso</span>
           <h3>IC Project @ Spring Lab (EPFL)</h3>
           <p class="abstract">Proposed a new benchmark for context-aware moderation using a context-augmented LLM annotator. Showed limitations of current approaches and how our method is a first step towards moderation as an empowering tool for marginalized communities.</p>
         </div>
@@ -349,7 +374,7 @@
       
       <article class="entry entry-no-media">
         <div>
-          <span class="entry-meta">2025 · Master Semester Project</span>
+          <span class="entry-meta">2025 · Master Semester Project | Prof. Martin Schrimpf</span>
           <h3>NeuroAI Project @ NeuroAI Lab (EPFL)</h3>
           <p class="abstract"><u>Modeling Brain Response to Dynamic Visual Stimuli Using Enhanced Neural Networks for Motion Processing</u>: Implemented, engineered and tested multiple SOTA vision models using PyTorch with the goal of obtaining high alignment with fMRI brain activations.</p>
         </div>
@@ -357,7 +382,7 @@
       
       <article class="entry entry-no-media">
         <div>
-          <span class="entry-meta">2023 · Bachelor Research Project</span>
+          <span class="entry-meta">2023 · Bachelor Research Project | Prof. Pavan Ramdya</span>
           <h3>RL Project @ Neuroengineering Laboratory (EPFL)</h3>
           <p class="abstract"><u>Social NeuroMechFly 2.0</u>: Improved a Gym Drosophilia simulation for behavioral studies. Upgraded the program to allow for multiple entities in a single simulation and added new capacities for the simulated animals</p>
         </div>
@@ -365,19 +390,10 @@
       
       <article class="entry entry-no-media">
         <div>
-          <span class="entry-meta">2023 · Summer In the Lab</span>
+          <span class="entry-meta">2023 · Summer In the Lab | Prof. Alexander Mathis</span>
           <h3>Research Internship @ Alexander Mathis Group of Computational Neuroscience & AI</h3>
           <p class="abstract">I studied the conditions for transformer models to keep simulated animal walking even when the attention layer is frozen. Presented the results during a symposium at EPFL.</p>
         </div>
-      </article>
-
-      <article class="entry entry-no-media">
-          <div>
-              <span class="entry-meta">2019 · HEP Fribourg</span>
-              <h3>GameHub platform</h3>
-              <p class="abstract">Developed a website for educational video games, along with the TypeScript framework for creating and adding games. The tools is used today to teach Digital Education at HEP and games are developed by EMF students on a semester basis.</p>
-          </div>
-          
       </article>
 
     </section>
