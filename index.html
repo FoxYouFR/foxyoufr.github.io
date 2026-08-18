@@ -195,6 +195,9 @@
     object-fit:cover;
     display:block;
   }
+  .entry:not(:has(.entry-media)){
+    grid-template-columns:1fr;
+  }
 
   .entry h3{
     font-family:var(--serif);
