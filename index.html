@@ -40,7 +40,6 @@
     border-radius:2px;
   }
 
-  /* ---------- Layout ---------- */
   .layout{
     display:grid;
     grid-template-columns:var(--sidebar-w) 1fr;
@@ -50,13 +49,23 @@
     padding:56px 32px 100px;
   }
 
-  /* ---------- Sidebar ---------- */
   .sidebar{
     position:sticky;
     top:56px;
     align-self:start;
     height:fit-content;
   }
+
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
   
   h1.name{
     font-family:var(--serif);
@@ -78,26 +87,6 @@
     color:var(--ink-soft);
     line-height:1.6;
     margin:0 0 16px;
-  }
-
-  .affiliation-text{
-    color:var(--ink-soft);
-    font-size:.9rem;
-    margin:0 0 16px;
-  }
-
-  .logos{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    margin-bottom:22px;
-    flex-wrap:wrap;
-  }
-  .logos img{
-    height:22px;
-    width:auto;
-    opacity:.8;
-    filter:grayscale(100%) invert(1) brightness(1.3);
   }
 
   .contact-icons{
@@ -143,7 +132,6 @@
     text-decoration:none;
   }
 
-  /* ---------- Main content ---------- */
   main{ min-width:0; }
 
   section{
@@ -151,7 +139,10 @@
     margin-bottom:56px;
     border-bottom:1px solid var(--line);
   }
-  section:last-of-type{ border-bottom:none; margin-bottom:0; }
+  section:last-of-type{
+    border-bottom:none;
+    margin-bottom:0;
+  }
 
   h2.section-title{
     font-family:var(--sans);
@@ -171,7 +162,6 @@
   .bio ul ul{ margin-top:8px; }
   .bio strong, .bio a{ color:var(--ink); }
 
-  /* ---------- Entry cards (papers / talks) ---------- */
   .entry{
     display:grid;
     grid-template-columns:200px 1fr;
@@ -238,18 +228,15 @@
     color:var(--ink);
   }
 
-  /* ---------- Simple text sections ---------- */
   .plain p{ margin:0 0 16px; color:var(--ink-soft); }
   .plain strong, .plain a{ color:var(--ink); }
 
-  /* ---------- Footer ---------- */
   footer{
     color:var(--ink-faint);
     font-size:.82rem;
   }
   footer p{ margin:4px 0; }
 
-  /* ---------- Responsive ---------- */
   @media (max-width:860px){
     .layout{
       grid-template-columns:1fr;
@@ -279,6 +266,7 @@
 <div class="layout">
 
   <aside class="sidebar">
+    <img src="media/profile.jpg" alt="Florian Kolly" class="profile-pic">
     <h1 class="name">Florian Kolly</h1>
     <p class="role">NeuroAI student @EPFL</p>
 
@@ -324,6 +312,7 @@
           <img src="https://placehold.co/400x270/141414/7c7973?text=Fig" alt="">
         </div>
         <div>
+        <div>
           <span class="entry-meta">2026 · Nature Communications</span>
           <h3>A Topographic Video Model Predicts the Spatio-Functional Organization of the Human Visual System</h3>
           <p class="authors">Yingtian Tang*, Yash Shah, <strong>Florian Kolly</strong>, Daniel L. K. Yamins, Martin Schrimpf</p>
@@ -343,6 +332,7 @@
       <h2 class="section-title">Projects</h2>
       
       <article class="entry entry-no-media">
+        <div>
           <span class="entry-meta">2025 · Master Semester Project</span>
           <h3>NeuroAI Project @ Cognitive Computational Neuroscience lab (FUB)</h3>
           <p class="abstract"><u>Implied auditory information from natural scenes presented visually</u>: ongoing research.</p>
@@ -350,6 +340,7 @@
       </article>
       
       <article class="entry entry-no-media">
+        <div>
           <span class="entry-meta">2025 · IC Research Project</span>
           <h3>IC Project @ Spring Lab (EPFL)</h3>
           <p class="abstract">Proposed a new benchmark for context-aware moderation using a context-augmented LLM annotator. Showed limitations of current approaches and how our method is a first step towards moderation as an empowering tool for marginalized communities.</p>
@@ -357,6 +348,7 @@
       </article>
       
       <article class="entry entry-no-media">
+        <div>
           <span class="entry-meta">2025 · Master Semester Project</span>
           <h3>NeuroAI Project @ NeuroAI Lab (EPFL)</h3>
           <p class="abstract"><u>Modeling Brain Response to Dynamic Visual Stimuli Using Enhanced Neural Networks for Motion Processing</u>: Implemented, engineered and tested multiple SOTA vision models using PyTorch with the goal of obtaining high alignment with fMRI brain activations.</p>
@@ -364,6 +356,7 @@
       </article>
       
       <article class="entry entry-no-media">
+        <div>
           <span class="entry-meta">2023 · Bachelor Research Project</span>
           <h3>RL Project @ Neuroengineering Laboratory (EPFL)</h3>
           <p class="abstract"><u>Social NeuroMechFly 2.0</u>: Improved a Gym Drosophilia simulation for behavioral studies. Upgraded the program to allow for multiple entities in a single simulation and added new capacities for the simulated animals</p>
@@ -371,6 +364,7 @@
       </article>
       
       <article class="entry entry-no-media">
+        <div>
           <span class="entry-meta">2023 · Summer In the Lab</span>
           <h3>Research Internship @ Alexander Mathis Group of Computational Neuroscience & AI</h3>
           <p class="abstract">I studied the conditions for transformer models to keep simulated animal walking even when the attention layer is frozen. Presented the results during a symposium at EPFL.</p>
@@ -390,7 +384,6 @@
 
     <footer>
       <p>&copy; 2026 Florian Kolly</p>
-      <p>Built with HTML &amp; CSS · Hosted on GitHub Pages</p>
     </footer>
 
   </main>
